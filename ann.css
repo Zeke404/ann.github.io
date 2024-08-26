@@ -1,0 +1,114 @@
+/* styles.css */
+
+body {
+    background-color: #f9f4f5;
+    background: url(./images/logo.png);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #333;
+    
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 2px solid #fdd; */
+    border-radius: 15px;
+    /* background-color: #fff; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #d45b5b;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+p{
+    color: #d45b5b;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #d45b5b;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c94444;
+}
+
+.messages {
+    margin-top: 30px;
+}
+
+.message {
+    display: none;
+    font-size: 1.5em;
+    color: #555;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fce4e4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message:after {
+   
+    display: inline-block;
+    margin-left: 10px;
+}
+.logo {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Centers the logo and adds some space below it */
+}
+/* styles.css */
+
+/* Container with Image Box Shadow */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    border-radius: 15px;
+    color: #fff;
+    overflow: hidden; /* Ensures the pseudo-element doesn’t overflow */
+}
+
+/* Pseudo-element for Image Shadow */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: url('./images/049990C4-A1B1-4CB2-94EC-D2B9D7AF3DEF_1_201_a.jpeg') no-repeat center center / cover;
+    z-index: -1;
+    filter: blur(1px); /* Adds a blur effect to mimic a shadow */
+    opacity: 0.7; /* Adjust opacity for a softer shadow */
+}
+
+h1 {
+    color: #fdd;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
